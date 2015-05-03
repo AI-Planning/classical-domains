@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'Nomystery is a transportation domain designed to study resource constrained planning. In this domain, a truck moves in a weighted graph; a set of packages must be transported between nodes; actions move along edges, and load/unload packages; each move consumes the edge weight in fuel. In brief, Nomystery is a straightforward problem similar to the ones contained in many IPC benchmarks. Its key feature is that it comes with a domain-specific optimal solver allowing to control the constrainedness of the resources. The generator first creates a random connected undirected graph with n nodes, and it adds k packages with random origins and destinations. The edge weights are uniformly drawn between 1 and an integer W. The optimal solver computes the minimum required amount of fuel M, and the initial fuel supply is set to [C xM], where C >=1 is a (float) input parameter of the generator. The parameter C denotes the ratio between the available fuel vs. the minimum amount required. The problem becomes more constrained when C approaches 1.',
  'ipc': '2011',
  'name': 'nomystery',
  'problems': [('nomystery-opt11-strips/domain.pddl',

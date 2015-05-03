@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'In this domain, the goal is always the same (to have lots of snacks in order to watch a movie), but the number of constants increases with problem number. Some planners have combinatorial problems in such cases. This domain was created by Corin Anderson.',
  'ipc': '1998',
  'name': 'movie',
  'problems': [('movie/domain.pddl', 'movie/prob01.pddl'),

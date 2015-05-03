@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'This is the mystery domain with one extra action, the ability to squirt a unit of fuel from any node to a neighboring node, provided the originating node has at least two units. Created by Drew McDermott',
  'ipc': None,
  'name': 'no-mprime',
  'problems': [('no-mprime/domain.pddl', 'no-mprime/prob01.pddl'),

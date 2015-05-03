@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'This domain involves driving trucks around delivering packages between locations. The complication is that the trucks require drivers who must walk between trucks in order to drive them. The paths for walking and the roads for driving form different maps on the locations.',
  'ipc': '2002',
  'name': 'driverlog',
  'problems': [('driverlog/domain.pddl', 'driverlog/pfile1.pddl'),

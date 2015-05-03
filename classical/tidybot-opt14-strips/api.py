@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'The Tidybot domain models a household cleaning task, in which one or more robots must pick up a set of objects and put them into goal locations. The world is structured as a 2d grid, divided into navigable locations and surfaces on which objects may lie. Robots have a gripper, which moves relative to the robot, up to some maximum radius. Existing objects block the gripper, so that it may be necessary to move one object out of the way to put another one down. Robots can carry one object at a time in the gripper, but may also make use of a cart, that can hold multiple objects. The instance generator creates worlds that contain rectangular surfaces ("tables"), as well as U-shaped enclosures ("cupboards"), which are the goal locations of objects.',
  'ipc': '2014',
  'name': 'tidybot',
  'problems': [('tidybot-opt14-strips/domain.pddl',

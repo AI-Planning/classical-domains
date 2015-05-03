@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'Simulates the works in a woodworking workshop where there is some quantity of wood that has to be polished, coloured, etc. using different tools with different costs. Parameters of each problem are the parts to be done and the quantity (in % of necessary) of available wood (boards). The higher the number of parts and the boards the more difficult the problem is.',
  'ipc': '2011',
  'name': 'woodworking',
  'problems': [('woodworking-opt11-strips/domain.pddl',

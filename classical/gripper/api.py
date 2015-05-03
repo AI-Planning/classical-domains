@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'There is a robot with two grippers. It can carry a ball in each. The goal is to take N balls from one room to another; N rises with problem number. Some planners treat the two grippers asymmetrically, giving rise to an unnecessary combinatorial explosion. This domain was created by Jana Koehler.',
  'ipc': '1998',
  'name': 'gripper',
  'problems': [('gripper/domain.pddl', 'gripper/prob01.pddl'),

@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'An agent in the middle of a square grid nxn must visit all the cells in the grid. Solving optimally the delete relaxation h+ gives the exact goal distance as long as there exists a hamiltonian path visiting every cell. Recall that in a 1xn grid, no hamiltonian path exists.',
  'ipc': '2014',
  'name': 'visitall',
  'problems': [('visitall-sat14-strips/domain.pddl',

@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'There are several cities, each containing several locations, some of which are airports. There are also trucks, which can drive within a single city, and airplanes, which can fly between airports. The goal is to get some packages from various locations to various new locations. This domain was created by Bart Selman and Henry Kautz, based on an earlier domain by Manuela Veloso.',
  'ipc': '2000',
  'name': 'logistics',
  'problems': [('logistics00/domain.pddl', 'logistics00/adl-98-prob01.pddl'),

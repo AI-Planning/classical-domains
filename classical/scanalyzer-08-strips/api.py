@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'This domain models the problem of automatic greenhouse logistic management.',
  'ipc': '2008',
  'name': 'scanalyzer',
  'problems': [('scanalyzer-08-strips/p01-domain.pddl',

@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'This domain is to plan how to make and serve sandwiches for a group of children in which some are allergic to gluten. There are two actions for making sandwiches from their ingredients. The first one makes a sandwich and the second one makes a sandwich taking into account that all ingredients are gluten-free. There are also actions to put a sandwich on a tray and to serve sandwiches. Problems in this domain define the ingredients to make sandwiches at the initial state. Goals consist of having all kids served with a sandwich to which they are not allergic.',
  'ipc': '2014',
  'name': 'childsnack',
  'problems': [('childsnack-opt14-strips/domain.pddl',

@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'Moving and storing crates of goods by hoists from containers to depots with spatial maps.',
  'ipc': '2006',
  'name': 'storage',
  'problems': [('storage/domain.pddl', 'storage/p01.pddl'),

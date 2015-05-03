@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': "In this domain there is a robot barman that manipulates drink dispensers, glasses and a shaker. The goal is to find a plan of the robot's actions that serves a desired set of drinks. In this domain deletes of actions encode relevant knowledge given that robot hands can only grasp one object at a time and given that glasses need to be empty and clean to be filled.",
  'ipc': '2014',
  'name': 'barman',
  'problems': [('barman-sat14-strips/domain.pddl',

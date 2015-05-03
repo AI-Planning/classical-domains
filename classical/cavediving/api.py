@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'There are a set of divers, each of who can carry 4 tanks of air. These divers must be hired to go into an underwater cave and either take photos or prepare the way for other divers by dropping full tanks of air. The cave is too narrow for more than one diver to enter at a time. The cave system is represented by an undirected acyclic graph. Divers have a single point of entry. Certain leaf nodes of the cave branches are objectives that the divers must photograph. Swimming and photographing both consume air tanks. Divers must exit the cave and decompress at the end. They can therefore only make a single trip into the cave. Certain divers have no confidence in other divers and will refuse to work if someone they have no confidence in has already worked. Divers have hiring costs inversely proportional to how hard they are to work with.',
  'ipc': '2014',
  'name': 'cavediving',
  'problems': [('cavediving/domain.pddl', 'cavediving/testing01.pddl'),

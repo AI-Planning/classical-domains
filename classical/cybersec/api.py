@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'A domain that models the cyber security model of vulnerability analysis for cyber defense.',
  'ipc': '2008',
  'name': 'cybersec',
  'problems': [('cybersec/p01-domain.pddl', 'cybersec/p01.pddl'),

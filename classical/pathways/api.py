@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'Finding a sequence of biochemical (pathways) reactions in an organism producing certain substances.',
  'ipc': '2006',
  'name': 'pathways',
  'problems': [('pathways/domain_p01.pddl', 'pathways/p01.pddl'),

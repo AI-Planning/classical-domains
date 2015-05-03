@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'Developed by Sylvie Thiebaux and Jorg Hoffmann. Planners must resupply a number of lines in a faulty electricity network. The flow of electricity through the network, at any point in time, is given by a transitive closure over the network connections, subject to the states of the switches and electricity supply devices. The domain is therefore a good example of the usefulness of derived predicates in real-world applications.',
  'ipc': '2004',
  'name': 'psr-small',
  'problems': [('psr-small/p01-domain.pddl',

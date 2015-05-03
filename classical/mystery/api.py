@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'There is a planar graph of nodes. At each node are vehicles, cargo items, and some amount of fuel. Objects can be loaded onto vehicles (up to their capacity), and the vehicles can move between nodes; but a vehicle can leave a node only if there is a nonzero amount of fuel there, and the amount decreases by one unit. The goal is to get cargo items from various nodes to various new nodes. To disguise the domain, the nodes were called emotions, the cargo items were pains, the vehicles were pleasures, and fuel and capacity numbers were encoded as geographical entities. This domain was created by Drew McDermott.',
  'ipc': '1998',
  'name': 'mystery',
  'problems': [('mystery/domain.pddl', 'mystery/prob01.pddl'),

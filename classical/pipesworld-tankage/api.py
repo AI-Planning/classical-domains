@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'Developed by Frederico Liporace and Jorg Hoffmann. Planners control the flow of oil derivatives through a pipeline network, obeying various constraints such as product compatibility, tankage restrictions, and (in the most complex domain version) goal deadlines. One interesting aspect of the domain is that, if one inserts something into the one end of a pipeline segment, something potentially completely different comes out at the other end. This gives rise to several subtle phenomena that can arise in the creation of a plan.',
  'ipc': '2004',
  'name': 'pipesworld-tankage',
  'problems': [('pipesworld-tankage/domain.pddl',

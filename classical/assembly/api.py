@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'The goal is to assemble a complex object made out of subassemblies. The sequence of steps must obey a given partial order. In addition, through poor engineering design, many subassemblies must be installed temporarily in one assembly, then removed and given a permanent home in another. This domain was created by Drew McDermott.',
  'ipc': '1998',
  'name': 'assembly',
  'problems': [('assembly/domain.pddl', 'assembly/prob01.pddl'),

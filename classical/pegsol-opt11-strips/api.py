@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'This domain models the Peg Solitaire game. (http://en.wikipedia.org/wiki/Peg_solitaire)',
  'ipc': '2011',
  'name': 'pegsol',
  'problems': [('pegsol-opt11-strips/domain.pddl',

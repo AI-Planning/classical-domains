@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'Traveling and buying goods at selected markets minimizing costs (from OR with variants, NP-hard).',
  'ipc': '2006',
  'name': 'tpp',
  'problems': [('tpp/domain.pddl', 'tpp/p01.pddl'),

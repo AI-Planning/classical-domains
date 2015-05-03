@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'The GED problem is to find a min-cost sequence of operations that transforms one genome (signed permutation of genes) into another. The purpose of this is to use this cost as a measure of the distance between the two genomes, which is used to construct hypotheses about the evolutionary relationship between the organisms.',
  'ipc': '2014',
  'name': 'ged',
  'problems': [('ged-opt14-strips/domain.pddl', 'ged-opt14-strips/d-1-2.pddl'),

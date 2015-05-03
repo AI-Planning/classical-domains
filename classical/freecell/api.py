@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'Freecell is the familiar solitaire game found on many computers, involving moving cards from an initial tableau, constrained by tight restrictions, to achieve a final suit-sorted collection of stacks.',
  'ipc': '2000',
  'name': 'freecell',
  'problems': [('freecell/domain.pddl', 'freecell/probfreecell-10-1.pddl'),
@@ -62,7 +62,7 @@ domains = [
               ('freecell/domain.pddl', 'freecell/probfreecell-9-3.pddl'),
               ('freecell/domain.pddl', 'freecell/probfreecell-9-4.pddl'),
               ('freecell/domain.pddl', 'freecell/probfreecell-9-5.pddl')]},
-{'description': '',
+{'description': 'Freecell is the familiar solitaire game found on many computers, involving moving cards from an initial tableau, constrained by tight restrictions, to achieve a final suit-sorted collection of stacks.',
  'ipc': '2002',
  'name': 'freecell',
  'problems': [('freecell/domain.pddl', 'freecell/pfile1.pddl'),

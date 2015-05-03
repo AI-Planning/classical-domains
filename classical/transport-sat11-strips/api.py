@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'Each vehicle can transport some packages depending on its capacity and moving has a cost depending on the length of the road. Picking up or dropping a package costs 1.',
  'ipc': '2011',
  'name': 'transport',
  'problems': [('transport-sat11-strips/domain.pddl',

@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'This domain is original from the learning part of IPC2008. The domain represents a well-known solitaire card game.',
  'ipc': '2014',
  'name': 'thoughtful',
  'problems': [('thoughtful-sat14-strips/domain.pddl',

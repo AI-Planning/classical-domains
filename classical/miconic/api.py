@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'A domain that models the problem of elevator control. Originally introduced by Jana Koehler and Kilian Schuster from Schindler Lifts  Ltd.',
  'ipc': None,
  'name': 'miconic',
  'problems': [('miconic/domain.pddl', 'miconic/s1-0.pddl'),

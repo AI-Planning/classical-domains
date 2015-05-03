@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'Inspired by planetary rovers problems, this domain requires that a collection of rovers navigate a planet surface, finding samples and communicating them back to a lander.',
  'ipc': '2006',
  'name': 'rovers',
  'problems': [('rovers/domain.pddl', 'rovers/p01.pddl'),

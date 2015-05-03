@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'This domain was devised in order to see what would happen if two previously well-researched domains were joined together. These were the logistics and blocks domains. They are combined to form a domain in which trucks can transport crates around and then the crates must be stacked onto pallets at their destinations. The stacking is achieved using hoists, so the stacking problem is like a blocks-world problem with hands. Trucks can behave like "tables", since the pallets on which crates are stacked are limited.',
  'ipc': '2002',
  'name': 'depot',
  'problems': [('depot/domain.pddl', 'depot/pfile1.pddl'),

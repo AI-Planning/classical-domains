@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'This domain models the Sokoban game. (http://en.wikipedia.org/wiki/Sokoban)',
  'ipc': '2008',
  'name': 'sokoban',
  'problems': [('sokoban-opt08-strips/p01-domain.pddl',

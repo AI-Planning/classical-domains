@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'This is a simplified version of the well-known Tetris. All the pieces (1x1, 2x1, L) are randomly distributed on a NxN grid. The goal is to move them in order to free the upper half of the grid. The pieces can be rotated or translated. Each movement action has a different cost, accordingly to the size of the piece.',
  'ipc': '2014',
  'name': 'tetris',
  'problems': [('tetris-opt14-strips/domain.pddl',

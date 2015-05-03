@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'Developed by Stefan Edelkamp. Planners are asked to find deadlocks in communication protocols, translated into PDDL from the Promela specification language. Deadlocks were specified via blocked transitions and processes. The representation chosen for the processes are finite state transition systems, while communication channels are modelled by queues with moving head and tail pointers. The communication protocols used in IPC-4 were the dining philosophers problem, as well as an optical telegraph routing problem.',
  'ipc': '2004',
  'name': 'optical-telegraphs',
  'problems': [('optical-telegraphs/domain.pddl',

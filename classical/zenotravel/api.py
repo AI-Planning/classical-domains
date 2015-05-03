@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'The zenotravel domain involves transporting people around in planes, using different modes of movement: fast and slow. The key to this domain is that, where the expressive power of the numeric tracks is used, the fast movement consumes fuel faster than slow movement, making the search for a good quality plan (one using less fuel) much harder.',
  'ipc': '2002',
  'name': 'zenotravel',
  'problems': [('zenotravel/domain.pddl', 'zenotravel/pfile1.pddl'),

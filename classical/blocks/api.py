@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'The blocks world is one of the most famous planning domains in artificial intelligence. Imagine a set of cubes (blocks) sitting on a table. The goal is to build one or more vertical stacks of blocks. The catch is that only one block may be moved at a time: it may either be placed on the table or placed atop another block. Because of this, any blocks that are, at a given time, under another block cannot be moved.',
  'ipc': '2000',
  'name': 'blocks',
  'problems': [('blocks/domain.pddl', 'blocks/probBLOCKS-10-0.pddl'),

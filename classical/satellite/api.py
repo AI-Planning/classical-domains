@@ -1,5 +1,5 @@
 domains = [
-{'description': '',
+{'description': 'The first of the domains inspired by space-applications is a first step towards the "Ambitious Spacecraft" described by David Smith at AIPS-2000. It involves planning and scheduling a collection of observation tasks between multiple satellites, each equipped in slightly different ways.',
  'ipc': '2004',
  'name': 'satellite',
  'problems': [('satellite/domain.pddl', 'satellite/p01-pfile1.pddl'),
