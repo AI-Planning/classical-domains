@@ -4,6 +4,7 @@ from krrt.utils import get_file_list, write_file
 
 from data import *
 
+forbidden_files = ['__init__', 'api.py']
 
 def get_name(dom):
     suffixes = ['-sat', '-opt', '-strips', '-fulladl', '-06', '-08', '-00', '-02', '98', '00', '-simpleadl', '-adl']
@@ -34,28 +35,29 @@ def handle_single(dom):
     if './freecell' == dom:
         extra_domain = True
 
-        domdata['problems'] = [((dom+'/domain.pddl')[2:], prob[2:]) for prob in sorted(get_file_list(dom, forbidden_list=['pfile','/domain.pddl']))]
+        domdata['problems'] = [((dom+'/domain.pddl')[2:], prob[2:]) for prob in sorted(get_file_list(dom, forbidden_list=forbidden_files+['pfile','/domain.pddl']))]
         domdata['ipc'] = '2000'
 
         domdata2 = {}
         domdata2['name'] = domdata['name']
         domdata2['description'] = domain_description[get_name(dom)]
-        domdata2['problems'] = [((dom+'/domain.pddl')[2:], prob[2:]) for prob in sorted(get_file_list(dom, forbidden_list=['/domain.pddl'], match_list=['pfile']))]
+        domdata2['problems'] = [((dom+'/domain.pddl')[2:], prob[2:]) for prob in sorted(get_file_list(dom, forbidden_list=forbidden_files+['/domain.pddl'], match_list=['pfile']))]
         domdata2['ipc'] = '2002'
 
     elif './satellite' == dom:
         extra_domain = True
 
-        domdata['problems'] = [((dom+'/domain.pddl')[2:], prob[2:]) for prob in sorted(get_file_list(dom, forbidden_list=['/domain.pddl']))]
+        domdata['problems'] = [((dom+'/domain.pddl')[2:], prob[2:]) for prob in sorted(get_file_list(dom, forbidden_list=forbidden_files+['/domain.pddl']))]
         domdata['ipc'] = ipc_map.get(dom[2:])
 
         domdata2 = {}
         domdata2['name'] = domdata['name']
-        domdata2['problems'] = [((dom+'/domain.pddl')[2:], prob[2:]) for prob in sorted(get_file_list(dom, forbidden_list=['/domain.pddl','-HC-']))]
+        domdata2['description'] = domain_description[get_name(dom)]
+        domdata2['problems'] = [((dom+'/domain.pddl')[2:], prob[2:]) for prob in sorted(get_file_list(dom, forbidden_list=forbidden_files+['/domain.pddl','-HC-']))]
         domdata2['ipc'] = '2002'
 
     else:
-        domdata['problems'] = [((dom+'/domain.pddl')[2:], prob[2:]) for prob in sorted(get_file_list(dom, forbidden_list=['/domain.pddl']))]
+        domdata['problems'] = [((dom+'/domain.pddl')[2:], prob[2:]) for prob in sorted(get_file_list(dom, forbidden_list=forbidden_files+['/domain.pddl','/domain-nosplit.pddl','/orig-domain.pddl']))]
         domdata['ipc'] = ipc_map.get(dom[2:])
 
     towrite += pprint.pformat(domdata)
@@ -80,8 +82,8 @@ def handle_double(dom):
     domdata['name'] = get_name(dom)
     domdata['description'] = domain_description[get_name(dom)]
 
-    domfiles = get_file_list(dom, match_list=['domain'])
-    prbfiles = get_file_list(dom, forbidden_list=['domain'])
+    domfiles = get_file_list(dom, match_list=['domain'], forbidden_list=forbidden_files)
+    prbfiles = get_file_list(dom, forbidden_list=forbidden_files+['domain'])
 
     if len(domfiles) == len(prbfiles):
         def remdom(dom):
@@ -97,11 +99,11 @@ def handle_double(dom):
             domdata['ipc'] = ipc_map.get(dom[2:])
         elif dom in ['./psr-small', './airport']:
             print "Handling custom 50-problem domain: %s" % dom
-            assert 100 == len(get_file_list(dom, match_list=['pddl']))
+            assert 100 == len(get_file_list(dom, match_list=['pddl'], forbidden_list=forbidden_files))
             probs = []
             for i in range(1,51):
-                d = get_file_list(dom, match_list=["p%02d-domain" % i])
-                p = get_file_list(dom, match_list=["p%02d-" % i], forbidden_list=['domain'])
+                d = get_file_list(dom, match_list=["p%02d-domain" % i], forbidden_list=forbidden_files)
+                p = get_file_list(dom, match_list=["p%02d-" % i], forbidden_list=forbidden_files+['domain'])
                 assert 1 == len(d), str(d)
                 assert 1 == len(p), str(p)
                 probs.append((d[0][2:], p[0][2:]))
@@ -139,11 +141,12 @@ for dom in domains:
     else:
         if os.path.isfile(dom+'/domain.pddl'):
             single_dom.append(dom)
-            for i in get_file_list(dom, forbidden_list=['/domain.pddl']):
+            for i in get_file_list(dom, forbidden_list=forbidden_files+['/domain.pddl']):
                 if 'dom' in i.split('/')[-1]:
                     print "Warning: Double domain in %s must be handled." % dom
         else:
             multi_dom.append(dom)
+        os.system("touch %s/__init__.py" % dom)
 
 print "\nSingle doms: %d" % len(single_dom)
 print map(get_name, single_dom)

@@ -151,7 +151,5 @@ domains = [
               ('miconic-fulladl/domain.pddl', 'miconic-fulladl/f9-1.pddl'),
               ('miconic-fulladl/domain.pddl', 'miconic-fulladl/f9-2.pddl'),
               ('miconic-fulladl/domain.pddl', 'miconic-fulladl/f9-3.pddl'),
-              ('miconic-fulladl/domain.pddl', 'miconic-fulladl/f9-4.pddl'),
-              ('miconic-fulladl/domain.pddl',
-               'miconic-fulladl/orig-domain.pddl')]}
+              ('miconic-fulladl/domain.pddl', 'miconic-fulladl/f9-4.pddl')]}
 ]

@@ -3,8 +3,6 @@ domains = [
  'ipc': '2004',
  'name': 'pipesworld-tankage',
  'problems': [('pipesworld-tankage/domain.pddl',
-               'pipesworld-tankage/domain-nosplit.pddl'),
-              ('pipesworld-tankage/domain.pddl',
                'pipesworld-tankage/p01-net1-b6-g2-t50.pddl'),
               ('pipesworld-tankage/domain.pddl',
                'pipesworld-tankage/p02-net1-b6-g4-t50.pddl'),
