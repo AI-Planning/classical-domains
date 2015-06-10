@@ -7,7 +7,7 @@ For more information, please visit the following page:
 
 Installation:
 It is highly recommended that you use the command-line
-utility found at https://bitbucket.org/pddl-tools/api-tools
+utility found at https://bitbucket.org/planning-tools/api-tools
 to install (i.e., clone) this repository. Not only will
 it fetch the latest and update the repository if you wish,
 but it will point the local API to the correct directory
