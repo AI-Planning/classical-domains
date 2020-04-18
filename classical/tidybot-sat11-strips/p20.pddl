@@ -5,14 +5,14 @@
   (:objects 
    pr2 - robot 
    cart - cart 
-   object0 - object 
-   object1 - object 
-   object2 - object 
-   object3 - object 
-   object4 - object 
-   object5 - object 
-   object6 - object 
-   object7 - object 
+   target0 - target 
+   target1 - target 
+   target2 - target 
+   target3 - target 
+   target4 - target 
+   target5 - target 
+   target6 - target 
+   target7 - target 
    x0 - xc 
    x1 - xc 
    x2 - xc 
@@ -142,17 +142,17 @@
    (sum-y y11 yrel0 y11)
    (zerox-rel xrel0) 
    (zeroy-rel yrel0) 
-   (object-goal object0 x5 y2)
-   (object-goal object0 x9 y3)
-   (object-goal object1 x5 y3)
-   (object-goal object2 x6 y2)
-   (object-goal object3 x6 y3)
-   (object-goal object4 x6 y7)
-   (object-goal object5 x6 y8)
-   (object-goal object5 x1 y5)
-   (object-goal object6 x7 y7)
-   (object-goal object6 x3 y9)
-   (object-goal object7 x7 y8)
+   (target-goal target0 x5 y2)
+   (target-goal target0 x9 y3)
+   (target-goal target1 x5 y3)
+   (target-goal target2 x6 y2)
+   (target-goal target3 x6 y3)
+   (target-goal target4 x6 y7)
+   (target-goal target5 x6 y8)
+   (target-goal target5 x1 y5)
+   (target-goal target6 x7 y7)
+   (target-goal target6 x3 y9)
+   (target-goal target7 x7 y8)
    
    (parked pr2)
    (not-pushing pr2)
@@ -198,14 +198,14 @@
    (not-pushed cart)
    (base-obstacle x0 y1)
    
-   (object-pos object0 x7 y8)
-   (object-pos object1 x6 y8)
-   (object-pos object2 x6 y2)
-   (object-pos object3 x9 y3)
-   (object-pos object4 x1 y6)
-   (object-pos object5 x7 y7)
-   (object-pos object6 x9 y4)
-   (object-pos object7 x3 y9)
+   (target-pos target0 x7 y8)
+   (target-pos target1 x6 y8)
+   (target-pos target2 x6 y2)
+   (target-pos target3 x9 y3)
+   (target-pos target4 x1 y6)
+   (target-pos target5 x7 y7)
+   (target-pos target6 x9 y4)
+   (target-pos target7 x3 y9)
    
    (gripper-empty pr2)
    (gripper-rel pr2 xrel0 yrel0)
@@ -221,12 +221,12 @@
   
   (:goal 
    (and 
-   (object-done object0)
-   (object-done object1)
-   (object-done object2)
-   (object-done object3)
-   (object-done object4)
-   (object-done object5)
-   (object-done object6)
-   (object-done object7)
+   (target-done target0)
+   (target-done target1)
+   (target-done target2)
+   (target-done target3)
+   (target-done target4)
+   (target-done target5)
+   (target-done target6)
+   (target-done target7)
   )))
