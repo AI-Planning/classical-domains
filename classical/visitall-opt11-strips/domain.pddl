@@ -1,5 +1,5 @@
 (define (domain grid-visit-all)
-(:requirements :typing)
+(:requirements :typing :strips)
 (:types        place - object)
 (:predicates (connected ?x ?y - place)
 	     (at-robot ?x - place)

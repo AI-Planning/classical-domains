@@ -1,7 +1,5 @@
 (define (domain GROUNDED-TRUCKS)
-(:requirements
-:strips
-)
+(:requirements :strips)
 (:predicates
 (FOO)
 (time-now_t1)

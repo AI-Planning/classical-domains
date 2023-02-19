@@ -1,5 +1,5 @@
 (define (domain satellite)
-(:requirements :equality :strips)
+(:requirements :strips)
 (:predicates
 	 (on_board ?i ?s) (supports ?i ?m) (pointing ?s ?d) (power_avail ?s) (power_on ?i) (calibrated ?i) (have_image ?d ?m) (calibration_target ?i ?d)(satellite ?x) (direction ?x) (instrument ?x) (mode ?x) )
 (:action turn_to

@@ -1,4 +1,5 @@
 (define (domain tyreworld)
+(:requirements :typing :strips)
   (:types obj - object
 	  tool wheel nut - obj
 	  container hub - object)

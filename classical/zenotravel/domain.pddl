@@ -1,4 +1,5 @@
 (define (domain zeno-travel)
+(:requirements :strips)
 (:predicates
 	 (at ?x ?c) (in ?p ?a) (fuel-level ?a ?l) (next ?l1 ?l2)(aircraft ?p) (person ?x) (city ?x) (flevel ?x) )
 (:action board

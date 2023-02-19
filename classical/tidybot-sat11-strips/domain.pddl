@@ -4,7 +4,7 @@
 ; 0, 0 at top left
 
 (define (domain TIDYBOT)
-  (:requirements :strips :typing :equality)
+  (:requirements :typing :negative-preconditions)
   (:types robot cart object xc yc xrel yrel)
   (:predicates
    ;; Constant preds

@@ -7,7 +7,7 @@
 ; of the mechanics so that each plane will get maintenance.
 
 (define (domain maintenance-scheduling-domain)
- (:requirements :adl :typing :conditional-effects)
+ (:requirements :typing :conditional-effects)
  (:types plane day airport)
  (:predicates  (done ?p - plane)
   (today ?d - day)

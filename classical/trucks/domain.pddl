@@ -2,7 +2,7 @@
 ; Authors: Yannis Dimopoulos, Alfonso Gerevini and Alessandro Saetti 
 
 (define (domain Trucks) 
-(:requirements :typing :adl)  
+(:requirements :typing :disjunctive-preconditions)  
 
 (:types truckarea time location locatable - object
         truck package - locatable) 

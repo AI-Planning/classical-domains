@@ -1,5 +1,5 @@
 (define (domain miconic)
-  (:requirements :adl :typing)
+  (:requirements :typing :conditional-effects :negative-preconditions)
   (:types passenger - object
           floor - object
          )

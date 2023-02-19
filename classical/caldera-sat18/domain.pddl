@@ -1,7 +1,7 @@
 ;Copyright 2018 The MITRE Corporation. All rights reserved. Approved for public release. Distribution unlimited 17-2122.
 ; For more information on CALDERA, the automated adversary emulation system, visit https://github.com/mitre/caldera or email attack@mitre.org
 (define (domain caldera)
-(:requirements :equality :typing :conditional-effects :negative-preconditions)
+(:requirements :typing :equality :conditional-effects :negative-preconditions)
 (:types
     value property - object
     object_type boolean string num - value

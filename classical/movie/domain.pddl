@@ -1,4 +1,5 @@
 (define (domain movie-strips)
+(:requirements :strips)
   (:predicates (movie-rewound)
                (counter-at-two-hours)
 	       (counter-at-other-than-two-hours)

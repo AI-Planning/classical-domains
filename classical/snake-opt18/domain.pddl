@@ -1,5 +1,5 @@
 (define (domain snake)
-(:requirements :strips :negative-preconditions)
+(:requirements :equality :negative-preconditions)
 (:constants
     dummypoint
 )

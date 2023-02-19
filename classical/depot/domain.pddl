@@ -1,4 +1,5 @@
 (define (domain depot)
+(:requirements :strips)
 (:predicates
 	 (at ?x ?y) (on ?x ?y) (in ?x ?y) (lifting ?x ?y) (available ?x) (clear ?x)(place ?x) (locatable ?x) (depot ?x) (distributor ?x) (truck ?x) (hoist ?x) (surface ?x) (pallet ?x) (crate ?x) )
 (:action drive

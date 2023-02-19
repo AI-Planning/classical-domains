@@ -1,7 +1,5 @@
 (define (domain grounded-STRIPS-OPENSTACKS-SEQUENCEDSTRIPS)
-(:requirements
-:strips
-)
+(:requirements :strips)
 (:predicates
 (MACHINE-CONFIGURED-P1)
 (MACHINE-CONFIGURED-P2)

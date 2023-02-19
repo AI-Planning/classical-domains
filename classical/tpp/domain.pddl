@@ -2,7 +2,7 @@
 ; Authors: Alfonso Gerevini and Alessandro Saetti 
 
 (define (domain TPP-Propositional)
-(:requirements :strips :typing)
+(:requirements :typing :strips)
 (:types place locatable level - object
 	depot market - place
 	truck goods - locatable)

@@ -1,7 +1,7 @@
 ;; openstacks, strips version
 
 (define (domain openstacks-sequencedstrips-ADL)
-  (:requirements :typing :adl :action-costs)
+  (:requirements :typing :disjunctive-preconditions :negative-preconditions :action-costs)
   (:types order product count)
   (:predicates (includes ?o - order ?p - product)
 	       (waiting ?o - order)
