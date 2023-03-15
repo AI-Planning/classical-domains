@@ -9,7 +9,7 @@
 
 
 (define (domain airport)
-(:requirements :equality :conditional-effects :typing :disjunctive-preconditions :negative-preconditions)
+(:requirements :adl)
 
 (:types airplane segment direction airplanetype)
 
