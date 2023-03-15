@@ -7,7 +7,7 @@
 ;  the software or its performance.
 
 (define (domain hiking)
-  (:requirements :strips :equality :typing)
+  (:requirements :typing :equality)
   (:types car tent person couple place )
   (:predicates 
               (at_tent ?x1 - tent ?x2 - place)

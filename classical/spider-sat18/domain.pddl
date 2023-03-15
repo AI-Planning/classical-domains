@@ -1,5 +1,5 @@
 (define (domain spider)
-(:requirements :typing :conditional-effects :action-costs :negative-preconditions)
+(:requirements :typing :conditional-effects :negative-preconditions :action-costs)
 (:types
     cardposition - object
     card_or_tableau - cardposition

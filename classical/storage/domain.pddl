@@ -2,7 +2,7 @@
 ; Authors: Alfonso Gerevini and Alessandro Saetti 
 
 (define (domain Storage-Propositional)
-(:requirements :typing)
+(:requirements :typing :strips)
 (:types hoist surface place area - object
 	container depot - place
 	storearea transitarea - area

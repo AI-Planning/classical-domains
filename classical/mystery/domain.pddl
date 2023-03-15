@@ -1,4 +1,5 @@
 (define (domain mystery-strips)
+(:requirements :strips)
    (:predicates
        (province ?x)
        (planet ?x)

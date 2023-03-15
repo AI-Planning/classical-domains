@@ -1,5 +1,5 @@
 (define (domain caldera-split)
-(:requirements :adl :action-costs)
+(:requirements :equality :conditional-effects :typing :negative-preconditions :action-costs)
 (:types
     value - object
     property - object

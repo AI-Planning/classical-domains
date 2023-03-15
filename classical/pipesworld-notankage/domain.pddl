@@ -2,7 +2,7 @@
 
 (define (domain pipesworld_strips)
 
-(:requirements :strips :typing )
+(:requirements :typing :strips)
 
 ;; Types
 ;;  pipe: a pipeline segment

@@ -1,5 +1,5 @@
 (define (domain nurikabe)
-(:requirements :typing :adl)
+(:requirements :typing :conditional-effects :negative-preconditions)
 (:types
     cell num group - object
 )

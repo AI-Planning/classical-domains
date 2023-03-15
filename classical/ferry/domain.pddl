@@ -1,4 +1,5 @@
 (define (domain ferry)
+(:requirements :strips)
    (:predicates (not-eq ?x ?y)
 		(car ?c)
 		(location ?l)

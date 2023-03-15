@@ -1,7 +1,5 @@
 (define (domain grounded-STRIPS-PSR)
-(:requirements
-:strips
-)
+(:requirements :strips)
 (:predicates
 (NOT-CLOSED-CB2)
 (UPDATED-CB2)

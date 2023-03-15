@@ -1,5 +1,5 @@
 (define (domain miconic)
-  (:requirements :adl)
+  (:requirements :typing :conditional-effects :disjunctive-preconditions :negative-preconditions)
   (:types passenger - object
           going_up going_down vip
 	  going_nonstop attendant never_alone 

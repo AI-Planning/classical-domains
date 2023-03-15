@@ -1,4 +1,5 @@
 (define (domain tsp)
+(:requirements :strips)
   (:predicates
      (at ?x)
      (visited ?x))

@@ -1,5 +1,5 @@
 (define (domain flashfill)
-(:requirements :action-costs :conditional-effects :typing :negative-preconditions :adl)
+(:requirements :typing :negative-preconditions :conditional-effects :action-costs)
 (:types
     char - object
     limiter - char

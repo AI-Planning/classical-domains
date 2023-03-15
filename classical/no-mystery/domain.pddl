@@ -1,4 +1,5 @@
 (define (domain no-mystery-strips)
+(:requirements :strips)
    (:predicates
        (fuel-number ?x)
        (capacity-number ?x)

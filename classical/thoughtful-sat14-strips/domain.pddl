@@ -3,7 +3,7 @@
 
 
 (define (domain thoughtful-typed)
-	(:requirements :typing)
+	(:requirements :typing :strips)
 	(:types card colnum num suittype)
 	(:predicates (on ?c1 - card ?c2 - card)
 		(ace ?c - card)

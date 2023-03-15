@@ -1,5 +1,5 @@
 (define (domain briefcase)
-(:requirements :adl)
+(:requirements :typing :negative-preconditions :conditional-effects)
 (:types portable location)
 (:predicates (at ?y - portable ?x - location)
              (in ?x - portable)

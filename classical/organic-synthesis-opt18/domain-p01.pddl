@@ -1,5 +1,5 @@
 (define (domain organic-synthesis)
-(:requirements :strips :typing :equality :negative-preconditions)
+(:requirements :typing :equality)
 (:types
     chemical_atom - object
     phosphorus calcium sulfur magnesium aluminium chromium iron manganese mercury boron copper palladium r_group - chemical_atom

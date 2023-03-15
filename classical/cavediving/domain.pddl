@@ -4,7 +4,7 @@
 ;;          Charles Gretton
 
 (define (domain cave-diving-adl)
-  (:requirements :typing :action-costs :adl)
+  (:requirements :typing :conditional-effects :negative-preconditions :action-costs)
   (:types location diver tank quantity)
   (:predicates
     (at-tank ?t - tank ?l - location)

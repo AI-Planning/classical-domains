@@ -1,5 +1,5 @@
 (define (domain miconic)
-  (:requirements :strips)
+  (:requirements :typing :strips)
   (:types passenger - object
           floor - object
          )
