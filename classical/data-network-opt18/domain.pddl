@@ -40,11 +40,11 @@
 )
 ;; Release data from RAM.
 (:action release
-    :parameters (?d - data ?s - server ?size ?before ?after - numbers)
+    :parameters (?d - data ?s - server ?size ?before ?subsequent - numbers)
     :precondition
     (and
         (DATA-SIZE ?d ?size)
-        (SUM ?after ?size ?before)
+        (SUM ?subsequent ?size ?before)
         (cached ?d ?s)
         (usage ?s ?before)
     )
@@ -52,7 +52,7 @@
     (and
         (not (cached ?d ?s))
         (not (usage ?s ?before))
-        (usage ?s ?after)
+        (usage ?s ?subsequent)
         (increase (total-cost) 0)
     )
 )
@@ -74,13 +74,13 @@
 
 ;; Load data from disk into RAM.
 (:action load
-    :parameters (?d - data ?s - server ?size ?limit ?before ?after - numbers)
+    :parameters (?d - data ?s - server ?size ?limit ?before ?subsequent - numbers)
     :precondition
     (and
         (DATA-SIZE ?d ?size)
         (CAPACITY ?s ?limit)
-        (SUM ?before ?size ?after)
-        (LESS-EQUAL ?after ?limit)
+        (SUM ?before ?size ?subsequent)
+        (LESS-EQUAL ?subsequent ?limit)
         (saved ?d ?s)
         (not (cached ?d ?s))
         (usage ?s ?before)
@@ -89,21 +89,21 @@
     (and
         (cached ?d ?s)
         (not (usage ?s ?before))
-        (usage ?s ?after)
+        (usage ?s ?subsequent)
         (increase (total-cost) (io-cost ?s ?size))
     )
 )
 
 ;; Send data from RAM of one server to RAM of another server.
 (:action send
-    :parameters (?d - data ?from ?to - server ?size ?limit ?before ?after - numbers)
+    :parameters (?d - data ?from ?to - server ?size ?limit ?before ?subsequent - numbers)
     :precondition
     (and
         (CONNECTED ?from ?to)
         (DATA-SIZE ?d ?size)
         (CAPACITY ?to ?limit)
-        (SUM ?before ?size ?after)
-        (LESS-EQUAL ?after ?limit)
+        (SUM ?before ?size ?subsequent)
+        (LESS-EQUAL ?subsequent ?limit)
         (cached ?d ?from)
         (not (cached ?d ?to))
         (usage ?to ?before)
@@ -112,21 +112,21 @@
     (and
         (cached ?d ?to)
         (not (usage ?to ?before))
-        (usage ?to ?after)
+        (usage ?to ?subsequent)
         (increase (total-cost) (send-cost ?from ?to ?size))
     )
 )
 
 ;; Executes a script that processes two data items from RAM and produces another data item in RAM.
 (:action process
-    :parameters (?in1 ?in2 ?out - data ?sc - script ?s - server ?size ?limit ?before ?after - numbers)
+    :parameters (?in1 ?in2 ?out - data ?sc - script ?s - server ?size ?limit ?before ?subsequent - numbers)
     :precondition
     (and
         (SCRIPT-IO ?sc ?in1 ?in2 ?out)
         (DATA-SIZE ?out ?size)
         (CAPACITY ?s ?limit)
-        (SUM ?before ?size ?after)
-        (LESS-EQUAL ?after ?limit)
+        (SUM ?before ?size ?subsequent)
+        (LESS-EQUAL ?subsequent ?limit)
         (cached ?in1 ?s)
         (cached ?in2 ?s)
         (not (cached ?out ?s))
@@ -136,7 +136,7 @@
     (and
         (cached ?out ?s)
         (not (usage ?s ?before))
-        (usage ?s ?after)
+        (usage ?s ?subsequent)
         (increase (total-cost) (process-cost ?sc ?s))
     )
 )
